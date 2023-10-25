@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "chatgpt"
+version = "0.0.1"
+description = "hehehe"
+authors = ["Vovanchik <vovapashaev461@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.100.1"
+sqlalchemy = "^2.0.19"
+pydantic = "^2.1.1"
+uvicorn = "^0.23.2"
+psycopg2 = "^2.9.6"
+httpx = "^0.24.1"
+alembic = {extras = ["sqlalchemy"], version = "^1.11.1"}
+jinja2 = "^3.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

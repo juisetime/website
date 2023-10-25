@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.tailwindcss.com"></script>
+    {% block head %}{% endblock %}
+    <title>Натрейдил</title>
+    	<style>
+		body {
+			background-color: #007bff; /* белый фон */
+		}
+		input[type=text], input[type=password] {
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+		}
+		button {
+			background-color: #fff; /* синий цвет кнопки */
+			color: #007bff;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			width: 100%;
+		}
+		button:hover {
+			background-color: #0069d9; /* изменение цвета кнопки при наведении */
+		}
+	</style>
+</head>
+<body>
+    <nav class="flex justify-between text-3xl my-3">
+        <ul class="flex ml-10">
+            <li>Натрейдил</li>
+        </ul>
+        <ul class="flex gap-5 mr-10">
+            <li>Мой аккаунт</li>
+            <li>Выйти</li>
+        </ul>
+    </nav>
+    <hr>
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
