@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdn.tailwindcss.com"></script>
     {% block head %}{% endblock %}
-    <title>Натрейдил</title>
+    <title>Мой Аккаунт</title>
     	<style>
 		body {
 			background-color: #007bff; /* белый фон */
@@ -39,14 +39,15 @@
 <body>
     <nav class="flex justify-between text-3xl my-3">
         <ul class="flex ml-10">
-            <li>Натрейдил</li>
+            <button type="submit">Мои Деньги</button>
         </ul>
         <ul class="flex gap-5 mr-10">
-            <li>Мой аккаунт</li>
-            <li>Выйти</li>
+            <button type="submit">Мой аккаунт</button>
+            <button type="submit">Выйти</button>
         </ul>
     </nav>
     <hr>
+
     <div id="content">
         {% block content %}{% endblock %}
     </div>
